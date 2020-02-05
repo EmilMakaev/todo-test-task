@@ -1,0 +1,182 @@
+.create-button {
+  font-size: 2rem;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border-radius: .5rem;
+  background-color: rgb(125, 83, 107);
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+  border: none;
+  text-transform: uppercase;
+  cursor: pointer;
+  outline: none;
+}
+
+.fade-two-enter-active,
+.fade-two-leave-active {
+  transition: opacity 0;
+}
+
+.fade-two-enter,
+.fade-two-leave-to {
+  opacity: 0;
+}
+
+.modal-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  position: fixed;
+  z-index: 98;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 99;
+  width: 90%;
+  background-color: rgb(199, 197, 141);
+  border-radius: 1.6rem;
+  padding: 2.5rem;
+  &__header {
+    margin-bottom: 2rem;
+  }
+  &__lable {
+    font-size: 1.5rem;
+  }
+  &__p {
+    font-weight: bold;
+    color: black;
+    margin-bottom: 2rem;
+  }
+}
+
+.modal h2 {
+  color: #222;
+  font-size: 3rem;
+  margin-bottom: 1.5rem;
+}
+
+.section {
+  display: flex;
+  flex-direction: column;
+  &__title {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: .5rem;
+    &-single {
+      margin-top: 5rem;
+    }
+    &-label {
+      font-size: 2rem;
+      font-weight: bold;
+      margin-bottom: .5rem;
+    }
+    &-input {
+      font-size: 2rem;
+      width: 60%;
+      margin: auto;
+    }
+  }
+  &__description {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: .5rem;
+    &-label {
+      font-size: 2rem;
+      font-weight: bold;
+      margin-top: 1rem;
+      margin-bottom: .5rem;
+    }
+    &-input {
+      font-size: 2rem;
+      width: 60%;
+      margin: auto;
+    }
+  }
+  &__tasks {
+    &-p {
+      font-size: 2rem;
+      font-weight: bold;
+      margin-top: 1rem;
+    }
+    &-li {
+      list-style-type: none;
+      padding-right: 1rem;
+    }
+    &-input {
+      font-size: 1.2rem;
+      margin-left: .5rem;
+      &[type=checkbox] {
+        zoom: 1.4;
+      }
+    }
+    &-button {
+      color: white;
+      border-radius: 1rem;
+      font-weight: bold;
+      text-decoration: none;
+      text-transform: uppercase;
+      cursor: pointer;
+      outline: none;
+      border: none;
+      &-delete {
+        width: 8rem;
+        padding: .5rem;
+        font-size: 1.2rem;
+        margin-left: 1rem;
+        background-color: rgb(197, 92, 54);
+        margin-bottom: 1rem;
+      }
+      &-add {
+        width: 14rem;
+        padding: 1rem;
+        font-size: 1.5rem;
+        background-color: rgb(125, 83, 107);
+        margin-right: .5rem;
+        margin-bottom: .5rem;
+        &:disabled,
+        &[disabled] {
+          border: 1px solid #999999;
+          background-color: #cccccc;
+          color: rgb(197, 92, 54);
+          cursor: not-allowed;
+        }
+      }
+    }
+  }
+  &__buttons {
+    display: flex;
+    justify-content: center;
+  }
+  &__button {
+    color: white;
+    margin-top: 1rem;
+    margin-right: 0.5rem;
+    width: 12rem;
+    font-size: 1.5rem;
+    padding: 1rem;
+    border-radius: 1rem;
+    font-weight: bold;
+    text-decoration: none;
+    text-transform: uppercase;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    &-add {
+      background-color: rgb(81, 84, 3);
+    }
+    &-cancel {
+      background-color: rgb(197, 92, 54);
+    }
+    &-delete {
+      background-color: red;
+    }
+  }
+}

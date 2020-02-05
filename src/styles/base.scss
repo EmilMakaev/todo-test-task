@@ -1,0 +1,37 @@
+$bp-largest: 75em; // 1200px
+$bp-large: 68.75em; // 1100px
+$bp-medium: 56.25em; // 900px
+$bp-small: 37.5em; // 600px
+$bp-smallest: 31.25em; // 500px
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  background-color: rgb(199, 197, 141);
+  font-size: 62.5%; // 1rem = 10px, 10px/16px = 62.5%
+  /* @media only screen and (max-width: $bp-large) {
+          font-size: 50%;
+      } */
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+
+/* body {
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  margin-bottom: 8rem;
+} */

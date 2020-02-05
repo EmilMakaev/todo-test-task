@@ -1,0 +1,10 @@
+// Extra CSS values for this component are taken from a file (_TodoCreate.scss)
+.fade-back-enter-active,
+.fade-back-leave-active {
+  transition: opacity 0;
+}
+
+.fade-back-enter,
+.fade-back-leave-to {
+  opacity: 0;
+}
