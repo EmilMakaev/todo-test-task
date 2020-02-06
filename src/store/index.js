@@ -25,6 +25,7 @@ export default new Vuex.Store({
       });
 
       Vue.set(state.todos, index, todoToUpdate);
+      localStorage.setItem('my_todos', JSON.stringify(state.todos));
       return state.todos;
     },
   },

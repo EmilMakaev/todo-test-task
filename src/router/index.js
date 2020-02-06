@@ -9,10 +9,12 @@ const routes = [{
     path: '/',
     name: 'home',
     component: Home,
+    props: true
   },
   {
     path: '/:id',
-    component: UpdateSingleTodo
+    component: UpdateSingleTodo,
+    props: true
   }
 ]
 

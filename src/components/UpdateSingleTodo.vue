@@ -158,7 +158,6 @@ import _ from "lodash"
 export default {
   data() {
     return {
-      id: this.$route.params.id,
       todo: [],
       defaultTodo: [],
       backupData: [],
@@ -166,6 +165,12 @@ export default {
       showModalBack: false,
       itemToDelete: '',
       buttonReturnToDefaultIsActive: false
+    }
+  },
+  props: {
+    id: {
+      type: String,
+      required: true
     }
   },
   computed: {
